@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ######container,row and columns###### -->
+    <!-- container -->
+    <!-- container-md maintain space around the element. It starts from md,lg,xl,xxl. Before md it will not maintain space around it. -->
+    <!-- <div class="container-md">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores quas accusantium rem veniam molestias
+        inventore? Sequi iusto ipsam neque voluptatibus dolore pariatur fugit unde quos voluptate possimus debitis
+        temporibus excepturi odit similique iure repellat illo, architecto expedita. Adipisci ipsum voluptates sint,
+        dolore possimus facilis maxime vel quis, alias, quia nemo obcaecati voluptatibus sunt architecto repellendus!
+        Odit beatae tempore laboriosam sint doloribus sapiente. Vitae fuga commodi dolor veritatis, et iusto ipsum, at
+        pariatur quae nemo ipsa quam suscipit eligendi quas perferendis! Sint perspiciatis dolorem nihil adipisci,
+        incidunt voluptate eveniet voluptatum magnam fuga optio esse delectus mollitia est iste reprehenderit
+        laboriosam.
+    </div> -->
+
+    <!-- row and columns. when we do not define size with col i.e col-1,col-2, it will wrap -->
+    <div class="container">
+        <h3>Number of cols. It wraps</h3>
+        <div class="row">
+            <div class="col">
+                <div class="box">1</div>
+            </div>
+            <div class="col">
+                <div class="box">2</div>
+            </div>
+            <div class="col">
+                <div class="box">3</div>
+            </div>
+            <div class="col">
+                <div class="box">4</div>
+            </div>
+            <div class="col">
+                <div class="box">5</div>
+            </div>
+            <div class="col">
+                <div class="box">6</div>
+            </div>
+            <div class="col">
+                <div class="box">7</div>
+            </div>
+            <div class="col">
+                <div class="box">8</div>
+            </div>
+            <div class="col">
+                <div class="box">9</div>
+            </div>
+            <div class="col">
+                <div class="box">10</div>
+            </div>
+            <div class="col">
+                <div class="box">11</div>
+            </div>
+            <div class="col">
+                <div class="box">12</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- col-auto takes width according to their content. And remaining width is taken by the col -->
+    <div class="container">
+        <h3>Col auto content. </h3>
+        <div class="row">
+            <div class="col-auto">
+                <div class="box">auto</div>
+            </div>
+            <div class="col">
+                <div class="box">1 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint sapiente saepe
+                    officiis quasi eius quo neque consectetur iure provident odit dolorem dignissimos, commodi quas,
+                    ipsam alias! Ullam praesentium laboriosam alias cum placeat laudantium expedita omnis sunt
+                    voluptatum nisi! Impedit perspiciatis numquam non perferendis est corrupti odio illo, amet ratione.
+                    Sapiente.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- when we define col-size then it does not wrap -->
+    <div class="container">
+        <h3> Different col size. It does not wrap</h3>
+        <div class="row">
+            <div class="col-3">
+                <div class="box">1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ipsa voluptatem
+                    veritatis impedit odit, blanditiis ex quam sed quasi vitae nobis! Debitis dicta totam ipsum,
+                    doloremque beatae cum voluptate ab blanditiis repudiandae minima itaque! Iusto, at corporis nisi
+                    corrupti possimus repellat libero magni porro? Odio porro dicta quaerat perspiciatis beatae.</div>
+            </div>
+            <div class="col-6">
+                <div class="box">2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptas
+                    reiciendis nihil! Sunt eveniet facere quidem sequi est debitis culpa aspernatur fugiat quasi,
+                    corrupti iusto facilis nam nemo? Natus reprehenderit iusto quae iure accusamus dolores sint,
+                    similique pariatur nobis aut impedit earum, enim distinctio accusantium inventore autem magnam,
+                    dolorum voluptatum?</div>
+            </div>
+            <div class="col-3">
+                <div class="box">3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt suscipit tempore error,
+                    dolor, velit praesentium quibusdam laboriosam ex laudantium ipsam consequatur soluta omnis? Eveniet
+                    iste libero corrupti architecto reiciendis quae molestiae mollitia distinctio voluptatum, illum
+                    necessitatibus perspiciatis, harum soluta illo, quos totam hic enim ex inventore nihil vero quo eos.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Responsive columns -->
+    <!-- sm,md,lg,xl,xxl -->
+    <!-- if md define it apply from md to xxl -->
+    <!-- if sm define it apply from sm to md -->
+    <!-- default is col-12 -->
+
+    <div class="container">
+        <h3>Resonsive columns</h3>
+        <div class="row">
+            <div class="col-md-6 col-sm-4 col-12">
+                <div class="box">1</div>
+            </div>
+            <div class="col-md-3 col-sm-4 col-12">
+                <div class="box">2</div>
+            </div>
+            <div class="col-md-3 col-sm-4 col-12">
+                <div class="box">3</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Offset -->
+    <!-- offset-[1-11]
+        offset-device-[1-11] eg offset-md-2
+    -->
+    <div class="container">
+        <h3>Offset</h3>
+        <div class="row">
+            <div class="col-3 offset-2">
+                <div class="box">1</div>
+            </div>
+            <div class="col-6">
+                <div class="box">2</div>
+            </div>
+            <div class="col-3">
+                <div class="box">3</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 
+    row-cols-lg-3 create three columns
+    row-cols-md-2 create two columns
+    row-cols-sm-1 create one columns
+    gy-[1-5] create vertical space between cols
+    gy-device-[0-5] eg: gy-lg-5
+    similary horizontal space gx-[0-5],gx-device-[0-5],
+    g-[0-5] horizontal and vertical space;
+     -->
+    <div class="container">
+        <h3>Row cols</h3>
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 gy-2 gy-lg-5 g">
+            <div class="col">
+                <div class="box">1</div>
+            </div>
+            <div class="col">
+                <div class="box">2</div>
+            </div>
+            <div class="col">
+                <div class="box">3</div>
+            </div>
+            <div class="col">
+                <div class="box">4</div>
+            </div>
+            <div class="col">
+                <div class="box">5</div>
+            </div>
+            <div class="col">
+                <div class="box">6</div>
+            </div>
+            <div class="col">
+                <div class="box">7</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</html>
